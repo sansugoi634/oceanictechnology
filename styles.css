@@ -1,9 +1,24 @@
-/* Base Styles (common to all screen sizes) */
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Helvetica Neue', sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+a:hover {
+  color: #005fa3;
 }
 
 .container {
@@ -12,6 +27,7 @@ body {
   padding: 0 1rem;
 }
 
+/* Header */
 .site-header {
   background-color: #004080;
   color: white;
@@ -29,7 +45,12 @@ body {
   font-size: 2rem;
 }
 
-.nav-list {
+.tagline {
+  font-size: 1rem;
+  margin: 0.3rem 0 1rem;
+}
+
+nav .nav-list {
   display: flex;
   gap: 1rem;
   list-style: none;
@@ -37,12 +58,12 @@ body {
   justify-content: center;
 }
 
-.nav-list li a {
+nav .nav-list li a {
   color: white;
   font-weight: 500;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
   background: linear-gradient(to right, #e0f0ff, #ffffff);
   padding: 4rem 1rem;
@@ -82,7 +103,7 @@ body {
   background-color: #f0f8ff;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
 }
 
@@ -95,7 +116,43 @@ body {
   color: #004080;
 }
 
-/* Footer Section */
+/* Pillars Section */
+.pillars {
+  padding: 3rem 1rem;
+  background-color: #eef6ff;
+}
+
+.pillars h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #004080;
+}
+
+.pillar-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.pillar-card {
+  background-color: #f0f8ff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-5px);
+}
+
+.pillar-card h4 {
+  margin-bottom: 0.5rem;
+  color: #004080;
+}
+
+/* Footer */
 .site-footer {
   text-align: center;
   padding: 1rem;
@@ -104,36 +161,14 @@ body {
   margin-top: 2rem;
 }
 
-/* Media Queries for Mobile */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .site-header .container {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
   }
 
-  .nav-list {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .program-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-    max-width: 90%;
-  }
-
-  .program-card {
-    padding: 1rem;
-  }
-
-  .programs h3 {
-    font-size: 1.6rem;
+  .tagline {
+    margin: 0;
   }
 }
