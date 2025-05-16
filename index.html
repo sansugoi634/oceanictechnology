@@ -3,37 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>クラウド＆AI研修 | Oceanic Technology</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQ3Kd1ohvP+0n0UJ0if1gkU5XnE8KYz7rF/J7Rxtx5aBf5BOqU3E3A0Ff" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css" />
+  <title>学校向けAWSクラウド＆AI研修 | Oceanic Technology</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <header class="site-header">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Oceanic Technology</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+      <h1 class="logo">Oceanic Technology</h1>
+      <p class="tagline">次世代教育のためのクラウド＆AIソリューション</p>
+      <!-- Hamburger Menu Button -->
+      <button class="hamburger" id="hamburger-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">ホーム</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">会社概要</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">お問い合わせ</a></li>
+      <!-- Navigation Menu -->
+      <nav id="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
         </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="hero text-center py-5 bg-light">
-    <div class="container">
-      <h1>クラウド & AI 研修</h1>
-      <p class="lead">小・中・高・大学校向けに、教育と実務経験を融合した学びを提供</p>
+      </nav>
     </div>
   </header>
 
-  <section class="container py-5">
-    <h2 class="text-center mb-4">提供プログラム</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="p-4 border rounded bg-light">
+  <main class="main-content">
+    <section class="hero">
+      <h2>学校向け AWS クラウド & AI 研修</h2>
+      <p>AWS Academy 認定インストラクターによる実践的な研修で、学生の未来を切り拓くクラウド・AIスキルを育成します。</p>
+    </section>
+
+    <section class="programs">
+      <h3>提供プログラム</h3>
+      <div class="program-grid">
+        <div class="program-card">
           <h4>AWS Cloud Foundations</h4>
+          <p>クラウドコンピューティングの基本を学ぶ初心者向け入門コース。理論と実践を組み合わせて理解を深めます。</p>
+        </div>
+        <div class="program-card">
+          <h4>ソリューションアーキテクター (Associate)</h4>
+          <p>AWSアーキテクチャ設計の基礎から応用までを網羅。試験対策と現場実践を両立します。</p>
+        </div>
+        <div class="program-card">
+          <h4>機械学習スペシャライゼーション</h4>
+          <p>AIの基礎からモデル構築・運用までを実践的に学ぶコース。最新のAI技術を教育現場に導入します。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Oceanic Technology | <a href="https://www.oceanictechnology.dev" target="_blank" rel="noopener">oceanictechnology.dev</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
