@@ -2,50 +2,42 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>お問い合わせ – Oceanic Technology</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; color: #333; }
-    header, footer { background: #0073bb; color: white; text-align: center; padding: 10px 20px; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; font-size: 0.9em; }
-    nav a:hover { text-decoration: underline; }
-    section { max-width: 900px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    h2 { color: #0073bb; }
-    form label { display: block; margin-top: 10px; }
-    input, textarea { width: 100%; padding: 8px; margin-top: 4px; }
-    button { margin-top: 12px; padding: 10px 20px; background: #0073bb; color: white; border: none; cursor: pointer; }
-    button:hover { background: #005f99; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>会社概要 | Oceanic Technology</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <header>
-    <h1>お問い合わせ</h1>
-    <nav>
-      <a href="index.html">ホーム</a>
-      <a href="about.html">私たちについて</a>
-      <a href="contact.html">お問い合わせ</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Oceanic Technology</h1>
+      <p class="tagline">次世代教育のためのクラウド＆AIソリューション</p>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>お問い合わせフォーム</h2>
-    <p>研修や資料請求についてのご質問は、以下のフォームからお気軽にご連絡ください。</p>
-    <form>
-      <label for="name">お名前</label>
-      <input type="text" id="name" name="name" required />
+  <main class="main-content">
+    <section class="container">
+      <h2>会社概要</h2>
+      <p>Oceanic Technology は、日本の教育機関向けにクラウドおよびAI研修を提供するリーディングカンパニーです。AWS Academy 認定インストラクターによる専門的な指導を通じて、学生・教員の未来を支援します。</p>
 
-      <label for="email">メールアドレス</label>
-      <input type="email" id="email" name="email" required />
+      <h3>特徴</h3>
+      <ul>
+        <li>日本で10年以上の業界経験を持つAWS教育者による研修</li>
+        <li>AWS公式カリキュラムに準拠した教育プログラム</li>
+        <li>学校・大学・専門学校との豊富な提携実績</li>
+        <li>実務と結びついた実践的な演習とプロジェクト</li>
+      </ul>
+    </section>
+  </main>
 
-      <label for="message">お問い合わせ内容</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">送信</button>
-    </form>
-  </section>
-
-  <footer>
-    © 2025 Oceanic Technology
+  <footer class="site-footer">
+    <p>&copy; 2025 Oceanic Technology | <a href="https://oceanictechnology.dev" target="_blank">oceanictechnology.dev</a></p>
   </footer>
 </body>
 </html>
