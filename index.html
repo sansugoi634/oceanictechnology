@@ -1,146 +1,194 @@
-/* ===== Base Reset & Typography ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>学校向けAWSクラウド＆AI研修 | Oceanic Technology</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: sans-serif;
-  line-height: 1.6;
-  color: #000;
-  background-color: #fff;
-}
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
 
-a {
-  text-decoration: none;
-  color: #0073e6;
-}
+    a {
+      text-decoration: none;
+      color: #0077cc;
+    }
 
-a:hover {
-  color: #004fa1;
-}
+    a:hover {
+      color: #005fa3;
+    }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 1rem;
-}
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 1rem;
+    }
 
-/* ===== Header ===== */
-.site-header {
-  background-color: #fff;
-  color: #000;
-  padding: 1rem 0;
-  border-bottom: 1px solid #ddd;
-}
+    /* Header */
+    .site-header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem 0;
+    }
 
-.site-header .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+    .site-header .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
 
-.site-header .logo {
-  font-size: 2rem;
-  font-weight: bold;
-}
+    .site-header h1 {
+      font-size: 2rem;
+    }
 
-.tagline {
-  font-size: 1rem;
-  margin: 0.3rem 0 1rem;
-}
+    .tagline {
+      font-size: 1rem;
+      margin: 0.3rem 0 1rem;
+    }
 
-.nav-list {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+    nav .nav-list {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-.nav-list li a {
-  color: #000;
-  font-weight: 500;
-}
+    nav .nav-list li a {
+      color: white;
+      font-weight: 500;
+    }
 
-/* ===== Hero Section ===== */
-.hero {
-  background-color: #f5f5f5;
-  padding: 3rem 1rem;
-  text-align: center;
-}
+    /* Hero */
+    .hero {
+      background: linear-gradient(to right, #e0f0ff, #ffffff);
+      padding: 4rem 1rem;
+      text-align: center;
+    }
 
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
 
-.hero p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: auto;
-}
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
 
-/* ===== Programs Section ===== */
-.programs {
-  padding: 3rem 1rem;
-  background-color: #fff;
-}
+    /* Programs Section */
+    .programs {
+      padding: 3rem 1rem;
+      background-color: #ffffff;
+    }
 
-.programs h3 {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-}
+    .programs h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
 
-.program-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
+    .program-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 
-.program-card {
-  background-color: #f5f5f5;
-  padding: 1.5rem;
-  border-radius: 6px;
-  border: 1px solid #e0e0e0;
-  transition: box-shadow 0.3s ease;
-}
+    .program-card {
+      background-color: #f0f8ff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
 
-.program-card:hover {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
+    .program-card:hover {
+      transform: translateY(-5px);
+    }
 
-.program-card h4 {
-  margin-bottom: 0.5rem;
-  color: #000;
-}
+    .program-card h4 {
+      margin-bottom: 0.5rem;
+      color: #004080;
+    }
 
-/* ===== Footer ===== */
-.site-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #fff;
-  color: #000;
-  border-top: 1px solid #ddd;
-}
+    /* Footer */
+    .site-footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #004080;
+      color: white;
+      margin-top: 2rem;
+    }
 
-.site-footer a {
-  color: #0073e6;
-  text-decoration: underline;
-}
+    @media (min-width: 768px) {
+      .site-header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
 
-/* ===== Responsive Layout ===== */
-@media (min-width: 768px) {
-  .site-header .container {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
+      .tagline {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
 
-  .tagline {
-    margin: 0;
-  }
-}
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Oceanic Technology</h1>
+      <p class="tagline">次世代教育のためのクラウド＆AIソリューション</p>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <h2>学校向け AWS クラウド & AI 研修</h2>
+      <p>AWS Academy 認定インストラクターによる実践的な研修で、学生の未来を切り拓くクラウド・AIスキルを育成します。</p>
+    </section>
+
+    <section class="programs">
+      <h3>提供プログラム</h3>
+      <div class="program-grid">
+        <div class="program-card">
+          <h4>AWS Cloud Foundations</h4>
+          <p>クラウドコンピューティングの基本を学ぶ初心者向け入門コース。理論と実践を組み合わせて理解を深めます。</p>
+        </div>
+        <div class="program-card">
+          <h4>ソリューションアーキテクト (Associate)</h4>
+          <p>AWSアーキテクチャ設計の基礎から応用までを網羅。試験対策と現場実践を両立します。</p>
+        </div>
+        <div class="program-card">
+          <h4>機械学習スペシャライゼーション</h4>
+          <p>AIの基礎からモデル構築・運用までを実践的に学ぶコース。最新のAI技術を教育現場に導入します。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Oceanic Technology | <a href="https://oceanictechnology.dev" target="_blank" rel="noopener">oceanictechnology.dev</a></p>
+  </footer>
+
+</body>
+</html>
