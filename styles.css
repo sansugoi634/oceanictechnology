@@ -1,24 +1,9 @@
-/* Reset & Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Base Styles (common to all screen sizes) */
 body {
   font-family: 'Helvetica Neue', sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #f9f9f9;
-}
-
-a {
-  text-decoration: none;
-  color: #0077cc;
-}
-
-a:hover {
-  color: #005fa3;
 }
 
 .container {
@@ -27,7 +12,6 @@ a:hover {
   padding: 0 1rem;
 }
 
-/* Header */
 .site-header {
   background-color: #004080;
   color: white;
@@ -45,12 +29,7 @@ a:hover {
   font-size: 2rem;
 }
 
-.tagline {
-  font-size: 1rem;
-  margin: 0.3rem 0 1rem;
-}
-
-nav .nav-list {
+.nav-list {
   display: flex;
   gap: 1rem;
   list-style: none;
@@ -58,12 +37,12 @@ nav .nav-list {
   justify-content: center;
 }
 
-nav .nav-list li a {
+.nav-list li a {
   color: white;
   font-weight: 500;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   background: linear-gradient(to right, #e0f0ff, #ffffff);
   padding: 4rem 1rem;
@@ -103,7 +82,7 @@ nav .nav-list li a {
   background-color: #f0f8ff;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
@@ -116,7 +95,7 @@ nav .nav-list li a {
   color: #004080;
 }
 
-/* Footer */
+/* Footer Section */
 .site-footer {
   text-align: center;
   padding: 1rem;
@@ -125,20 +104,36 @@ nav .nav-list li a {
   margin-top: 2rem;
 }
 
-.site-footer a {
-  color: white;
-  text-decoration: underline;
-}
-
-/* Responsive */
-@media (min-width: 768px) {
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
   .site-header .container {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
   }
 
-  .tagline {
-    margin: 0;
+  .nav-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .program-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .program-card {
+    padding: 1rem;
+  }
+
+  .programs h3 {
+    font-size: 1.6rem;
   }
 }
