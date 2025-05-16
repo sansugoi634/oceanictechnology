@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>学校向けAWSクラウド＆AI研修 | Oceanic Technology</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>教育機関向けAWSクラウド＆AI研修 | Oceanic Technology</title>
+  <link rel="stylesheet" href="styles1.css" />
 </head>
 <body>
-
   <header class="site-header">
     <div class="container">
       <h1 class="logo">Oceanic Technology</h1>
       <p class="tagline">次世代教育のためのクラウド＆AIソリューション</p>
-      <nav>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <nav id="nav">
         <ul class="nav-list">
           <li><a href="index.html">ホーム</a></li>
           <li><a href="about.html">会社概要</a></li>
@@ -24,10 +24,29 @@
 
   <main class="main-content">
     <section class="hero">
-      <h2>学校向け AWS クラウド & AI 研修</h2>
+      <h2>教育機関向け AWS クラウド & AI 研修</h2>
       <p>AWS Academy 認定インストラクターによる実践的な研修で、学生の未来を切り拓くクラウド・AIスキルを育成します。</p>
     </section>
 
+    <section class="programs">
+  <h3>信頼される教育の3本柱</h3>
+  <div class="program-grid">
+    <div class="program-card">
+      <h4>業界経験とグローバルな視野</h4>
+      <p>実務経験を持つインストラクターが、世界中で教育を行ってきました。日本国内外での経験を活かし、実践的なスキルを伝授します。</p>
+    </div>
+    <div class="program-card">
+      <h4>AWS認定試験サポート</h4>
+      <p>AWS認定試験に向けたサポートを提供し、資格取得の道筋を共に歩みます。</p>
+    </div>
+    <div class="program-card">
+      <h4>柔軟な学習スタイルと多言語対応</h4>
+      <p>日本語・英語での授業、サブスクリプション料金、オンライン・ハイブリッドに対応した柔軟な学習方法を提供します。</p>
+    </div>
+  </div>
+</section>
+
+    
     <section class="programs">
       <h3>提供プログラム</h3>
       <div class="program-grid">
@@ -48,8 +67,15 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2025 Oceanic Technology | <a href="https://oceanictechnology.dev" target="_blank" rel="noopener">oceanictechnology.dev</a></p>
+    <p>&copy; 2025 Oceanic Technology | <a href="https://www.oceanictechnology.dev" target="_blank" rel="noopener">www.oceanictechnology.dev</a></p>
   </footer>
 
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
