@@ -25,6 +25,7 @@ a:hover {
   max-width: 1200px;
   margin: auto;
   padding: 0 1rem;
+  position: relative;
 }
 
 /* Header */
@@ -63,7 +64,58 @@ nav .nav-list li a {
   font-weight: 500;
 }
 
-/* Hero */
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 1rem;
+  top: 1.2rem;
+}
+
+#nav {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .site-header .container {
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #004080;
+    padding-bottom: 1rem;
+  }
+
+  #nav.active {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Hero Section */
 .hero {
   background: linear-gradient(to right, #e0f0ff, #ffffff);
   padding: 4rem 1rem;
@@ -130,7 +182,7 @@ nav .nav-list li a {
   text-decoration: underline;
 }
 
-/* Responsive */
+/* Desktop Header Adjustments */
 @media (min-width: 768px) {
   .site-header .container {
     flex-direction: row;
