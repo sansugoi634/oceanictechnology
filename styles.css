@@ -116,42 +116,6 @@ nav .nav-list li a {
   color: #004080;
 }
 
-/* Pillars Section */
-.pillars {
-  padding: 3rem 1rem;
-  background-color: #eef6ff;
-}
-
-.pillars h3 {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  color: #004080;
-}
-
-.pillar-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.pillar-card {
-  background-color: #f0f8ff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-}
-
-.pillar-card:hover {
-  transform: translateY(-5px);
-}
-
-.pillar-card h4 {
-  margin-bottom: 0.5rem;
-  color: #004080;
-}
-
 /* Footer */
 .site-footer {
   text-align: center;
@@ -161,6 +125,12 @@ nav .nav-list li a {
   margin-top: 2rem;
 }
 
+.site-footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsive */
 @media (min-width: 768px) {
   .site-header .container {
     flex-direction: row;
